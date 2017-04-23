@@ -8,6 +8,6 @@ public interface Commons {
     public static final int INIT_PADDLE_Y = 360;
     public static final int INIT_BALL_X = 230;
     public static final int INIT_BALL_Y = 355;    
-    public static final int DELAY = 1000;
-    public static final int PERIOD = 10;
+    public static final int DELAY = 50;
+    public static final int PERIOD = 4;
 }
