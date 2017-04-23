@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Board extends JPanel implements ActionListener {
+public class Board_snake extends JPanel implements ActionListener {
 
     private final int B_WIDTH = 300;
     private final int B_HEIGHT = 300;
@@ -42,7 +42,7 @@ public class Board extends JPanel implements ActionListener {
     private Image head;
     int ct=0;
 
-    public Board() {
+    public Board_snake() {
 
         addKeyListener(new TAdapter());
         setBackground(Color.black);
@@ -117,9 +117,8 @@ public class Board extends JPanel implements ActionListener {
         g.setColor(Color.white);
         g.setFont(small);
         g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, B_HEIGHT / 2);
-        main m=new main();
-        m.setVisible(true);
-        System.exit(1);
+//                main m=new main();
+  //      m.setVisible(true);
     }
 
     private void checkApple() {
