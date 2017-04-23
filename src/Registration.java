@@ -43,7 +43,7 @@ public class Registration extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Noto Sans CJK JP Light", 1, 24)); // NOI18N
-        jLabel1.setText("Welcome To Fun World");
+        jLabel1.setText("Welcome To Fun World !!");
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jLabel2.setText("Name");
@@ -53,12 +53,6 @@ public class Registration extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jLabel4.setText("Credits");
-
-        jTextField1.setText("jTextField1");
-
-        jTextField2.setText("jTextField2");
-
-        jTextField3.setText("jTextField3");
 
         jButton1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jButton1.setText("Register");
@@ -162,7 +156,7 @@ System.exit(1);        // TODO add your handling code here:
 	Statement stmt=con.createStatement();
         int rs=stmt.executeUpdate(cmd);
         if(rs==1){
-		JOptionPane.showMessageDialog(null, "Welcome, Register Succesfully");
+		JOptionPane.showMessageDialog(null, "Welcome, Registered Succesfully");
 		ans=1;        
 	}
         else{
