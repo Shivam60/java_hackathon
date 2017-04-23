@@ -10,20 +10,20 @@ public class Snake extends JFrame {
         pack();        
         setTitle("Snake");
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
  
     }
     
 
     public static void main(String[] args) {
-        
-        EventQueue.invokeLater(new Runnable() {
+        fun();
+    }
+    public static void fun(){
+            EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {                
                 JFrame ex = new Snake();
                 ex.setVisible(true);                
             }
-        });
-        
-    }
+        });}
 }
